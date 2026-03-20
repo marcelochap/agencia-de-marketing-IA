@@ -12,13 +12,14 @@ The content production pipeline follows a structured, linear-but-recursive seque
 - Store drafts in `assets/[job_id]/generated/`.
 - After validation, move approved assets to `assets/[job_id]/approved/`.
 6. **Copywriting Phase:** Copywriter writes the final LinkedIn-ready text.
-7. **Review Phase:** Reviewer audits the entire output against the Brand System.
-8. **Final Decision:**
+7. **Production Phase:** Creative Producer assembles the final piece (HTML/PDF) and generates a validation preview.
+8. **Review Phase:** Reviewer audits the entire output (including the final produced piece) against the Brand System.
+9. **Final Decision:**
    - **If Approved:** Send to Human for final sign-off.
    - **If Approved with Adjustments:** Responsible agent fixes the issue → Reviewer re-audits.
-   - **If Rejected:** Route back to the agent responsible for the failure (Strategist, Researcher, Designer, or Copywriter).
-9. **Human Approval:** Human approves or requests changes.
-10. **Archive:** Final package is saved in `memory/archived_jobs/`.
+   - **If Rejected:** Route back to the agent responsible for the failure (Strategist, Researcher, Designer, Copywriter, or Producer).
+10. **Human Approval:** Human approves or requests changes.
+11. **Archive:** Final package is saved in `memory/archived_jobs/`.
 
 ---
 
@@ -31,6 +32,7 @@ The Reviewer is the primary router for rework:
 | Weak Research / Hallucination | **Researcher** | Rejected by Reviewer or Human |
 | Poor Format / Structure | **Designer** | Rejected by Reviewer or Human |
 | Generic Copy / Weak Hook | **Copywriter** | Rejected by Reviewer or Human |
+| Broken Assets / Layout Errors | **Producer** | Rejected by Reviewer or Human |
 
 ---
 

@@ -11,6 +11,7 @@
 - **Rework Routing:** If a piece is rejected by the Reviewer or Human, route the job back to the responsible agent.
 - **Handoff Coordination:** Ensure handoff messages are logged in the thread.
 - **Memory Harvesting:** Update `memory/lessons/` after successful approvals.
+- **Production Assembly:** Ensure the Creative Producer is called after the Copywriter phase.
 - **Usage Tracking:** Record token usage, runtime, retries, and estimated cost for every stage.
 
 ---

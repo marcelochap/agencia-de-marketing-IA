@@ -35,16 +35,17 @@ Before reviewing:
 ---
 
 ## ⚙️ Operational Flow (Pipeline)
-1. **Receive Inputs:** Read Brand System, Strategist output, Researcher dossier, Designer output, and Copywriter output.
+1. **Receive Inputs:** Read Brand System, Strategist output, Researcher dossier, Designer output, Copywriter output, and Producer output (final piece).
 2. **Validate Strategic Alignment:** Ensure content matches positioning and period objectives.
 3. **Validate Research Integrity:** Check for grounded claims and hallucination risks.
 4. **Validate Design Logic:** Check format appropriateness and structural clarity.
 5. **Validate Copy Quality:** Evaluate hook strength, technical specificity, and operator voice.
-6. **Check Narrative Consistency:** Ensure connection with previous/next content.
-7. **Identify Weaknesses:** Flag generic parts, weak phrasing, or overcomplication.
-8. **Suggest Improvements:** Provide actionable, targeted corrections.
-9. **Decide Outcome:** Issue a final status (APPROVED, APPROVED WITH ADJUSTMENTS, REJECTED).
-10. **Deliver Final Review:** Return the structured Review Output.
+6. **Validate Production Quality:** Check final asset (HTML/PDF) for asset loading, layout integrity, and copy completeness.
+7. **Check Narrative Consistency:** Ensure connection with previous/next content.
+8. **Identify Weaknesses:** Flag generic parts, weak phrasing, or overcomplication.
+9. **Suggest Improvements:** Provide actionable, targeted corrections.
+10. **Decide Outcome:** Issue a final status (APPROVED, APPROVED WITH ADJUSTMENTS, REJECTED).
+11. **Deliver Final Review:** Return the structured Review Output.
 
 ---
 
@@ -55,7 +56,8 @@ Before reviewing:
   "post_strategy": "[Strategist Output]",
   "research_dossier": "[Researcher Output]",
   "design_output": "[Designer Output]",
-  "copy_output": "[Copywriter Output]"
+  "copy_output": "[Copywriter Output]",
+  "producer_output": "[Producer Output]"
 }
 ```
 
@@ -92,6 +94,7 @@ Immediately reject if:
 3. **Design:** Format makes sense? Hierarchy is clear? Supports understanding?
 4. **Copy:** Strong hook? Specific and technical? No fluff? Fluid?
 5. **Narrative:** Connected to the broader story? Has a clear role?
+6. **Production:** Does the final file load correctly? Is the copy intact? Are assets high-res?
 
 ---
 
