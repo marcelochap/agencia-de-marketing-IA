@@ -1,0 +1,120 @@
+{
+  "content_id": "2026-03-20-production-bottlenecks",
+  "status": "waiting_human",
+  "current_owner": "human",
+  "next_step": "human_approval",
+  "review_cycles": 1,
+  "current_version": 1,
+  "metadata": {
+    "title": "Uso de dados para identificar gargalos inesperados na produção",
+    "campaign_id": "2026-q1-operational-efficiency",
+    "piece_type": "carousel",
+    "pillar": "Strategic Technology & AI",
+    "period_objective": "Authority",
+    "platform": "LinkedIn",
+    "created_at": "2026-03-20T15:05:00Z",
+    "updated_at": "2026-03-20T16:15:00Z",
+    "priority": "normal",
+    "asset_summary": {
+      "needs_generated_visuals": true,
+      "asset_count": 7,
+      "final_format": "carousel"
+    }
+  },
+  "brand_context": {
+    "brand_system_path": "brand/brand_system.md",
+    "content_pillars_path": "brand/content_pillars.md",
+    "visual_system_path": "brand/visual_system.md"
+  },
+  "brief": {
+    "topic": "Uso de dados para identificar gargalos inesperados na produção",
+    "angle": "Unexpected bottlenecks revealed by data",
+    "context": "Demonstrate operational differentiation and technical credibility",
+    "research_direction": [
+      "Industrial AI applications",
+      "Process variability in heavy production",
+      "Operational constraints"
+    ]
+  },
+  "deliverables": {
+    "strategist_output": "deliverables/2026-03-20-production-bottlenecks/strategy.md",
+    "researcher_output": "deliverables/2026-03-20-production-bottlenecks/research.md",
+    "designer_output": "deliverables/2026-03-20-production-bottlenecks/design.md",
+    "copywriter_output": "deliverables/2026-03-20-production-bottlenecks/copy.md",
+    "reviewer_output": "deliverables/2026-03-20-production-bottlenecks/review.md",
+    "generated_assets": [
+      "assets/2026-03-20-production-bottlenecks/generated/cover.png",
+      "assets/2026-03-20-production-bottlenecks/generated/dashboard.png"
+    ],
+    "approved_assets": [
+      "assets/2026-03-20-production-bottlenecks/approved/cover.png",
+      "assets/2026-03-20-production-bottlenecks/approved/dashboard.png"
+    ],
+    "final_exports": [
+      "deliverables/2026-03-20-production-bottlenecks/final_carousel_preview.html"
+    ]
+  },
+  "human_feedback": {
+    "status": "pending",
+    "current_request": "",
+    "last_feedback_at": ""
+  },
+  "feedback_history": [],
+  "human_approval": {
+    "status": "pending",
+    "approved_by": "",
+    "approved_at": "",
+    "notes": ""
+  },
+  "usage_metrics": {
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0,
+    "total_runtime_seconds": 0,
+    "total_rework_count": 0,
+    "stage_metrics": {}
+  },
+  "last_agent_update": {
+    "agent": "reviewer",
+    "timestamp": "2026-03-20T16:15:00Z",
+    "summary": "Full audit complete. Content APPROVED. Ready for human sign-off."
+   },
+  "version_history": [
+    {
+      "version": 1,
+      "timestamp": "2026-03-20T15:05:00Z",
+      "updated_by": "orchestrator",
+      "change_summary": "Job initialized"
+    },
+    {
+      "version": 2,
+      "timestamp": "2026-03-20T15:30:00Z",
+      "updated_by": "researcher",
+      "change_summary": "Research dossier and source link added"
+    },
+    {
+      "version": 3,
+      "timestamp": "2026-03-20T15:45:00Z",
+      "updated_by": "designer",
+      "change_summary": "Design plan and carousel flow created"
+    },
+    {
+      "version": 4,
+      "timestamp": "2026-03-20T16:00:00Z",
+      "updated_by": "copywriter",
+      "change_summary": "Final LinkedIn copy written"
+    },
+    {
+      "version": 5,
+      "timestamp": "2026-03-20T16:15:00Z",
+      "updated_by": "reviewer",
+      "change_summary": "Review complete and content approved"
+    }
+  ],
+  "final_status": {
+    "review_status": "approved",
+    "publish_status": "ready",
+    "archive_status": "active"
+  }
+}

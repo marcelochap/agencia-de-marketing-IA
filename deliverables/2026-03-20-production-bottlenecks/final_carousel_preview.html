@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview: O Paradoxo da Fábrica Oculta</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --primary: #38bdf8;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #0ea5e9;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            max-width: 600px;
+            aspect-ratio: 1 / 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .slides {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: var(--bg-card);
+        }
+
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.8));
+            z-index: 1;
+        }
+
+        .slide-content {
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .slide-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+
+        .slide-indicator {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--primary);
+            font-weight: 600;
+            z-index: 3;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            color: var(--text);
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .highlight {
+            color: var(--primary);
+        }
+
+        .controls {
+            margin-top: 24px;
+            display: flex;
+            gap: 16px;
+        }
+
+        button {
+            background-color: var(--bg-card);
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--bg-dark);
+            border-color: var(--primary);
+        }
+
+        .benchmarks {
+            background: rgba(56, 189, 248, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        .bench-val {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+        }
+
+        .bench-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <div class="slides" id="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="../../assets/2026-03-20-production-bottlenecks/approved/cover.png" alt="Industrial AI" class="slide-img">
+                <div class="slide-overlay"></div>
+                <div class="slide-indicator">01/07</div>
+                <div class="slide-content">
+                    <h1>Por que a <span class="highlight">experiência</span> do operador não é mais suficiente?</h1>
+                    <p>O gargalo que você não vê é o que mais custa caro à sua operação industrial.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-indicator">02/07</div>
+                <div class="slide-content" style="justify-content: center;">
+                    <h1>A média engana.<br><span class="highlight">A variabilidade mata.</span></h1>
+                    <p>Em ambientes complexos, o gargalo é um "alvo móvel". Ele pula de estação conforme o mix muda. Olhar para médias de ontem é dirigir pelo retrovisor.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-indicator">03/07</div>
+                <div class="slide-content" style="justify-content: center;">
+                    <p style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.2em; margin-bottom: 8px;">O Insight Técnico</p>
+                    <h1>O paradoxo dos <span class="highlight">Timestamps</span></h1>
+                    <p>Sem granularidade (Início/Fim), você não sabe se a máquina é lenta ou se a logística falhou. O Process Mining revela se o problema é técnico ou humano.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="../../assets/2026-03-20-production-bottlenecks/approved/dashboard.png" alt="OEE Dashboard" class="slide-img">
+                <div class="slide-overlay"></div>
+                <div class="slide-indicator">04/07</div>
+                <div class="slide-content" style="justify-content: center;">
+                    <h1>Benchmarks Reais</h1>
+                    <div class="benchmarks">
+                        <span class="bench-val">+30%</span>
+                        <span class="bench-label">Aumento no OEE</span>
+                    </div>
+                    <div class="benchmarks">
+                        <span class="bench-val">-47%</span>
+                        <span class="bench-label">Erro de Planejamento (MAE)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide">
+                <div class="slide-indicator">05/07</div>
+                <div class="slide-content" style="justify-content: center;">
+                    <h1>A "Fábrica Oculta"</h1>
+                    <p>Um desvio de <span class="highlight">3%</span> no tempo de ciclo de uma CNC parece irrelevante às 8h.</p>
+                    <p style="margin-top: 10px;">Ele se propaga e vira um gargalo de <span class="highlight">2 horas</span> às 17h.</p>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide">
+                <div class="slide-indicator">06/07</div>
+                <div class="slide-content" style="justify-content: center;">
+                    <h1>Como enxergar o invisível?</h1>
+                    <ul style="list-style: none; padding: 0; margin-top: 20px;">
+                        <li style="margin-bottom: 12px;">✅ Saia das planilhas para IT/OT.</li>
+                        <li style="margin-bottom: 12px;">✅ Integre silos (MES + ERP).</li>
+                        <li>✅ Use Gêmeos Digitais.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="slide">
+                <div class="slide-indicator">07/07</div>
+                <div class="slide-content" style="justify-content: center; text-align: center;">
+                    <h1>O futuro é orientado por <span class="highlight">dados</span>.</h1>
+                    <p>Pare de gerenciar médias. Comece a gerenciar variabilidade.</p>
+                    <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-weight: 800; letter-spacing: 0.1em; color: var(--text-muted);">
+                        BRAND SYSTEM | 2026
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="prev()">Anterior</button>
+        <button onclick="next()">Próximo</button>
+    </div>
+
+    <script>
+        let current = 0;
+        const total = 7;
+        const slides = document.getElementById('slides');
+
+        function next() {
+            current = (current + 1) % total;
+            update();
+        }
+
+        function prev() {
+            current = (current - 1 + total) % total;
+            update();
+        }
+
+        function update() {
+            slides.style.transform = `translateX(-${current * 100}%)`;
+        }
+    </script>
+</body>
+</html>

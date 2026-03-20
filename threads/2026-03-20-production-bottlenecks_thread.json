@@ -1,0 +1,93 @@
+[
+  {
+    "agent": "orchestrator",
+    "timestamp": "2026-03-20T15:05:00Z",
+    "type": "handoff",
+    "summary": "Job initialized for theme 'Uso de dados para identificar gargalos inesperados na produção'.",
+    "risks": [],
+    "decisions": [
+      "Initialized 5-layer workflow"
+    ],
+    "requests_to_next_agent": [
+    ],
+    "status_change": "drafted"
+  },
+  {
+    "agent": "strategist",
+    "timestamp": "2026-03-20T15:15:00Z",
+    "type": "handoff",
+    "summary": "Strategic plan defined for bottleneck detection using data. Mapping to Pillar 1.",
+    "risks": [
+      "Avoiding generic 'AI is good' narrative"
+    ],
+    "decisions": [
+      "Focus on invisible bottlenecks and variability"
+    ],
+    "requests_to_next_agent": [
+      "Researcher: Find real-world operational examples of variability causing bottlenecks that data can solve."
+    ],
+    "status_change": "strategy_ready"
+  },
+  {
+    "agent": "researcher",
+    "timestamp": "2026-03-20T15:30:00Z",
+    "type": "handoff",
+    "summary": "Research dossier complete. Industrial benchmarks found (30% OEE increase). Key technical constraint discovered: Timestamp granularity.",
+    "risks": [
+      "Overfilling the post with too many technical benchmarks."
+    ],
+    "decisions": [
+      "Focusing on the 'Processing vs. Queue Time' paradox for technical authority."
+    ],
+    "requests_to_next_agent": [
+      "Designer: Use the 'Processing vs. Queue' distinction as a visual pillar."
+    ],
+    "status_change": "research_ready"
+  },
+  {
+    "agent": "designer",
+    "timestamp": "2026-03-20T15:45:00Z",
+    "type": "handoff",
+    "summary": "Design plan complete. 7-slide carousel selected to explain 'Hidden Factory' and OEE benchmarks.",
+    "risks": [
+      "Slide 3 (Timestamps) might be too technical for some readers."
+    ],
+    "decisions": [
+      "Using a photorealistic industrial dashboard as a visual anchor."
+    ],
+    "requests_to_next_agent": [
+      "Copywriter: Keep the 'Operator Voice' but don't shy away from technical depth."
+    ],
+    "status_change": "design_ready"
+  },
+  {
+    "agent": "copywriter",
+    "timestamp": "2026-03-20T16:00:00Z",
+    "type": "handoff",
+    "summary": "Final copy written for the 7-slide carousel. Leveraged the 'Hidden Factory' analogy and technical paradoxes.",
+    "risks": [
+      "The 'stochastic interaction' concept might need a visual cue in the design."
+    ],
+    "decisions": [
+      "Using a direct, challenging hook to build technical authority."
+    ],
+    "requests_to_next_agent": [
+      "Reviewer: Please audit for strategic alignment and technical proof."
+    ],
+    "status_change": "copy_ready"
+  },
+  {
+    "agent": "reviewer",
+    "timestamp": "2026-03-20T16:15:00Z",
+    "type": "approval",
+    "summary": "Content package successfully audited. Positioning, technical integrity, and brand voice are all OK. Recommending final human approval.",
+    "risks": [],
+    "decisions": [
+      "No adjustments needed."
+    ],
+    "requests_to_next_agent": [
+      "Human: Final sign-off required for publication."
+    ],
+    "status_change": "waiting_human"
+  }
+]
